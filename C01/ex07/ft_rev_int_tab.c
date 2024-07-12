@@ -6,14 +6,13 @@ void	ft_rev_int_tab(int *tab int size)
 	tab = 0;
 	size = 0;
 	i = 0;
-	while(tab[ilen] != '\0')
+
+	while(tab[i] < (size / 2))
 	{
-		ilen++;
-	}
-	while(tab[i] != (ilen / 2))
-	{
-		tab[i] = iaux1
-		
+		aux = tab[i];
+		tab[i] = tab [size - 1 -i];
+		tab [size - 1 - i] = aux;
+		i++;
 	}
 }
 	
