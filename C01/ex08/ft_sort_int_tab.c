@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/13 13:46:08 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/13 15:01:40 by yblanco-         ###   ########.fr       */
+/*   Created: 2024/07/13 13:58:00 by yblanco-          #+#    #+#             */
+/*   Updated: 2024/07/13 15:04:52 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+void	ft_sort_int_tab(int *tab, int size)
 {
+	int	vswitch;
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (size >= 0)
 	{
-		write(1, &str[i], 1);
+		vswitch = 0;
+		if (tab[i] > tab[i + i])
+		{
+			vswitch = tab[1];
+			tab[i] = tab[i + 1];
+			tab[i + 1] = vswitch;
+		}
 		i++;
 	}
+	size--;
 }
