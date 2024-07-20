@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/13 13:46:08 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/13 15:01:40 by yblanco-         ###   ########.fr       */
+/*   Created: 2024/07/10 19:11:52 by yblanco-          #+#    #+#             */
+/*   Updated: 2024/07/13 15:27:33 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+int	ft_str_is_numeric(char *str)
 {
 	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
 	{
-		write(1, &str[i], 1);
-		i++;
+		if ((str[i] >= '0' && str[i] <= '9'))
+			i++;
+		else
+			return (0);
 	}
+	return (1);
 }

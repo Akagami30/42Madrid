@@ -1,25 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/13 13:46:08 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/13 15:01:40 by yblanco-         ###   ########.fr       */
+/*   Created: 2024/07/10 20:30:17 by yblanco-          #+#    #+#             */
+/*   Updated: 2024/07/13 15:34:50 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+char	*ft_strcapitalize(char *str)
 {
 	int	i;
 
-	i = 0;
+	i = 1;
+	if (str[0] >= 97 && str[0] <= 122)
+	{
+		str[0] = str[0] - 32;
+	}
 	while (str[i] != '\0')
 	{
-		write(1, &str[i], 1);
-		i++;
+		if ((str[i - 1] == ' ') && (str[i] >= 97) && (str[i] <= 122))
+		{
+			str[i] = str[i] - 32;
+			i++;
+		}
+		else
+			i++;
 	}
+	return (str);
 }
