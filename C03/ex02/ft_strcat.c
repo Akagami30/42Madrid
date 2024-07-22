@@ -6,11 +6,11 @@
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/13 17:56:29 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/22 18:13:56 by yblanco-         ###   ########.fr       */
+/*   Updated: 2024/07/22 19:58:20 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strcat(char *dest, char *src)
+char	*ft_strcat(char *dest, char *src)
 {
 	int	i_len;
 	int	i;
@@ -19,14 +19,12 @@ char *ft_strcat(char *dest, char *src)
 	i = 0;
 	while (dest[i_len] != '\0')
 		i_len++;
-
-	
 	while (src[i] != '\0')
 	{
 		dest[i_len + i] = src[i];
 		i++;
 	}
-	return(dest);	
+	return (dest);
 }
 
 /*

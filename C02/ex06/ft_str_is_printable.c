@@ -6,11 +6,11 @@
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 20:05:24 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/22 18:00:44 by yblanco-         ###   ########.fr       */
+/*   Updated: 2024/07/22 19:07:41 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_printabe(char *str)
+int	ft_str_is_printabile(char *str)
 {
 	int	i;
 

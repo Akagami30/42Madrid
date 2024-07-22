@@ -6,7 +6,7 @@
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 21:02:53 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/22 18:09:16 by yblanco-         ###   ########.fr       */
+/*   Updated: 2024/07/22 19:54:17 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,15 @@
 int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
-	int	it1;
-	int	it2;
 	int	itt;
 
-         i = 0;
-          it1 = 0;
-          it2 = 0;
-          while(s1[i] == s2[i] && s1[i] != '\0' &&  s2[i] != '\0')
-          {
-            i++;	
-          }       
- //       printf("%d""%s""%d", s1[i]," ", s2[i]);
+	i = 0;
+	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
+	{
+		i++;
+	}
 	itt = (unsigned char)s1[i] - (unsigned char)s2[i];
-          return(itt);
-	
+	return (itt);
 }
 
 /*int     main(void)

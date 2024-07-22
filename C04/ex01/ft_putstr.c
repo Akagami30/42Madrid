@@ -6,18 +6,19 @@
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 18:30:46 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/22 18:54:42 by yblanco-         ###   ########.fr       */
+/*   Updated: 2024/07/22 20:21:55 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
+
 void	ft_putstr(char *str)
 {
 	int	i;
 
 	i = 0;
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 	{
-		write(1, &str[i], 1);
+		write (1, &str[i], 1);
 		i++;
 	}
 }

@@ -6,18 +6,19 @@
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 18:14:30 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/22 18:54:30 by yblanco-         ###   ########.fr       */
+/*   Updated: 2024/07/22 20:22:44 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 //#include <stdio.h>
 int	ft_strlen(char *str)
 {
 	int	i;
-	
+
 	i = 0;
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 		i++;
-	return(i);
+	return (i);
 }
 /*
 int	main(void)
