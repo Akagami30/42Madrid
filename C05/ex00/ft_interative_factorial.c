@@ -1,26 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
+/*   ft_interative_factorial.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/10 19:11:52 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/20 19:12:23 by yblanco-         ###   ########.fr       */
+/*   Created: 2024/07/20 17:52:24 by yblanco-          #+#    #+#             */
+/*   Updated: 2024/07/20 19:18:57 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-int	ft_str_is_numeric(char *str)
+#include <stdio.h>
+int	ft_iterative_factorial(int nb)
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
+	int	n;
+	int	nt;
+	
+	nt= 1;
+	n = 1;
+	if (nb < 0)
+		return(0);
+	while(nb != '\0')
 	{
-		if ((str[i] >= '0' && str[i] <= '9'))
-			i++;
-		else
-			return (0);
+		//printf("%s", "prueba");
+		nt = nt * n;
+		n++;
+		nb--;
 	}
-	return (1);
+	return(nt);
+}
+
+#include <stdio.h>
+int main(void)
+{
+	int	numero;
+	numero = -5;
+	printf("%d", ft_iterative_factorial(numero));
+	return(0);
 }

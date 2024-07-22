@@ -1,26 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/10 19:11:52 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/20 19:12:23 by yblanco-         ###   ########.fr       */
+/*   Created: 2024/07/10 20:13:20 by yblanco-          #+#    #+#             */
+/*   Updated: 2024/07/15 20:04:04 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_numeric(char *str)
+char	*ft_strlowcase(char *str)
 {
 	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if ((str[i] >= '0' && str[i] <= '9'))
+		if ((str[i] >= 65) && (str[i] <= 90))
+		{
+			str[i] = str[i] + 32;
 			i++;
+		}
 		else
-			return (0);
+			i++;
 	}
-	return (1);
+	return (str);
 }
+/*
+char	main()
+{
+	char *str;
+	str = "Esto es una PRUEba";
+
+	ft_strupcase(str);
+	printf(str);
+	return(str);
+}
+*/

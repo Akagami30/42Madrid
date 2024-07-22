@@ -1,26 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
+/*   ft_fitbonacci.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/10 19:11:52 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/20 19:12:23 by yblanco-         ###   ########.fr       */
+/*   Created: 2024/07/20 22:04:29 by yblanco-          #+#    #+#             */
+/*   Updated: 2024/07/20 22:14:32 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_numeric(char *str)
+int	ft_fibonacci[int index]
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
+	while(i <= index)
 	{
-		if ((str[i] >= '0' && str[i] <= '9'))
-			i++;
-		else
-			return (0);
+		
 	}
-	return (1);
 }

@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/10 19:11:52 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/20 19:12:23 by yblanco-         ###   ########.fr       */
+/*   Created: 2024/07/18 18:14:30 by yblanco-          #+#    #+#             */
+/*   Updated: 2024/07/18 18:29:56 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-int	ft_str_is_numeric(char *str)
+#include <stdio.h>
+int	ft_strlen(char *str)
 {
 	int	i;
-
+	
 	i = 0;
-	while (str[i] != '\0')
-	{
-		if ((str[i] >= '0' && str[i] <= '9'))
-			i++;
-		else
-			return (0);
-	}
-	return (1);
+	while(str[i] != '\0')
+		i++;
+	return(i);
+}
+
+int	main(void)
+{
+	printf("%d", ft_strlen("1234567890"));
+	
 }

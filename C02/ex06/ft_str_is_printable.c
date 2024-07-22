@@ -6,21 +6,21 @@
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 20:05:24 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/13 15:29:27 by yblanco-         ###   ########.fr       */
+/*   Updated: 2024/07/16 19:59:48 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-intt	ft_str_i_printabe(char *str)
+int	ft_str_is_printabe(char *str)
 {
 	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if ((str >= 32) && (str <= 126))
-			i++;
-		else
+		if ((str < 32) || (str == 127)) 
 			return (0);
+		
+		i++;
 	}
 	return (1);
 }

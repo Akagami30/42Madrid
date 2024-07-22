@@ -1,26 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/10 19:11:52 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/20 19:12:23 by yblanco-         ###   ########.fr       */
+/*   Created: 2024/07/13 17:56:29 by yblanco-          #+#    #+#             */
+/*   Updated: 2024/07/20 17:42:33 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_numeric(char *str)
+char *ft_strcat(char *dest, char *src)
 {
+	int	i_len;
 	int	i;
 
+	i_len = 0;
 	i = 0;
-	while (str[i] != '\0')
+	while (dest[i_len] != '\0')
+		i_len++;
+
+	
+	while (src[i] != '\0')
 	{
-		if ((str[i] >= '0' && str[i] <= '9'))
-			i++;
-		else
-			return (0);
+		dest[i_len + i] = src[i];
+		i++;
 	}
-	return (1);
+	return(dest);	
 }
+/*
+#include <stdio.h>
+int main(void)
+{
+	char dest[15] = "hola";
+	char src[15] = "Mundo";
+	printf("String returned by ft_strcat: %s", ft_strcat(dest, src));
+	
+}*/

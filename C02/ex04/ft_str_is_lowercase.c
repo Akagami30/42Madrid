@@ -6,11 +6,11 @@
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 19:33:36 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/13 15:28:10 by yblanco-         ###   ########.fr       */
+/*   Updated: 2024/07/15 19:44:14 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_lowerase(char *str)
+int	ft_str_is_lowercase(char *str)
 {
 	int	i;
 
