@@ -6,10 +6,10 @@
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 18:14:30 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/18 18:29:56 by yblanco-         ###   ########.fr       */
+/*   Updated: 2024/07/22 18:54:30 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
+//#include <stdio.h>
 int	ft_strlen(char *str)
 {
 	int	i;
@@ -19,9 +19,9 @@ int	ft_strlen(char *str)
 		i++;
 	return(i);
 }
-
+/*
 int	main(void)
 {
 	printf("%d", ft_strlen("1234567890"));
 	
-}
+}*/

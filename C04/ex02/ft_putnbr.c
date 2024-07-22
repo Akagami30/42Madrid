@@ -6,12 +6,12 @@
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 18:36:33 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/18 20:29:20 by yblanco-         ###   ########.fr       */
+/*   Updated: 2024/07/22 18:54:51 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
  #include <unistd.h>
-#include <stdio.h>
+//#include <stdio.h>
   
 void	ft_putnbr(int nb)
 {
@@ -41,10 +41,11 @@ void	ft_putnbr(int nb)
 	
 	
 	   
- }
+}
+/*
   int     main(void)
 {
           ft_putnbr(-2147483648);
           return(0);
 }
-
+*/

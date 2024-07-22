@@ -6,7 +6,7 @@
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 20:05:24 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/16 19:59:48 by yblanco-         ###   ########.fr       */
+/*   Updated: 2024/07/22 18:00:44 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_str_is_printabe(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if ((str < 32) || (str == 127)) 
+		if ((str[i] < 32) || (str[i] == 127)) 
 			return (0);
 		
 		i++;

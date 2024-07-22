@@ -6,7 +6,7 @@
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/13 17:56:29 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/20 17:42:33 by yblanco-         ###   ########.fr       */
+/*   Updated: 2024/07/22 18:13:56 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,13 @@ char *ft_strcat(char *dest, char *src)
 	}
 	return(dest);	
 }
+
 /*
 #include <stdio.h>
 int main(void)
 {
-	char dest[15] = "hola";
-	char src[15] = "Mundo";
+	char dest[15] = "Hello";
+	char src[15] = "Wo";
 	printf("String returned by ft_strcat: %s", ft_strcat(dest, src));
 	
 }*/

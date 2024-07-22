@@ -6,7 +6,7 @@
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 19:52:15 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/20 20:12:08 by yblanco-         ###   ########.fr       */
+/*   Updated: 2024/07/22 18:57:51 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
@@ -26,10 +26,11 @@ int	ft_iterative_power(int nb, int power)
 	}
 	return(total_number);
 }
-
+/*
 int	main(void)
 {
 
 //	ft_iterative_power(3, 3);
 	printf("%d", ft_iterative_power(2, -1));
 }
+*/

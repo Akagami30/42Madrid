@@ -6,7 +6,7 @@
 /*   By: yblanco- <yblanco-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 21:02:53 by yblanco-          #+#    #+#             */
-/*   Updated: 2024/07/18 17:53:08 by yblanco-         ###   ########.fr       */
+/*   Updated: 2024/07/22 18:09:16 by yblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_strcmp(char *s1, char *s2)
 	
 }
 
-int     main(void)
+/*int     main(void)
 {
          int itt;
 	itt = 0;
@@ -39,4 +39,4 @@ int     main(void)
          itt = ft_strcmp("\201", "A");   
        printf("%d", itt);
          return(0);
-}
+}*/
