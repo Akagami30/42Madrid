@@ -15,7 +15,9 @@ int	ft_iterative_power(int nb, int power)
 {
 	int	power_number;
 	int	total_number;
-	if(nb == 0 && (power == 0 || power < 0)) // if power < 0 take a long time (?)
+	if (power == 0)
+		return(1);
+	if(nb < 0 &&  power < 0) // if power < 0 take a long time (?)
 		return(0);
 	power_number = 1;
 	total_number = nb;

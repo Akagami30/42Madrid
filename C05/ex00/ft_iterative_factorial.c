@@ -28,7 +28,7 @@ int	ft_iterative_factorial(int nb)
 	}
 	return(nt);
 }
-
+/*
 #include <stdio.h>
 int main(void)
 {
@@ -36,4 +36,4 @@ int main(void)
 	numero = -5;
 	printf("%d", ft_iterative_factorial(numero));
 	return(0);
-}
+}*/

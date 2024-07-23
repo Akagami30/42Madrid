@@ -35,7 +35,7 @@ int main(void)
          char dest[15] = "Hello";
          char src[15] = "World";
 //	unsigned int nb = 7;
-         printf("String returned by ft_strcat: %s", ft_strncat(dest, src, 2));
+         printf("String returned by ft_strcat: %s", ft_strncat(dest, src, 9));
         // printf("%s", dest);
 }
 */
